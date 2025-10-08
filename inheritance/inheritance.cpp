@@ -56,6 +56,8 @@ int main()
 
 	a.pub();
 
+	// a.prot(); // ERROR 
+
 	a.Hej();
 
 	clsB b;

@@ -28,6 +28,9 @@ int main()
 	Base b;
 	Derived d;
 
+	// d.sayHej();
+
+
 	Base *ptr1 = &b; // pointer to Base object
 	Base *ptr2 = &d; // pointer to Derived object
 
