@@ -23,12 +23,12 @@ public:
 	Printer()
 	{
 		buffer = new char[100];
-		cout << "Printer constructed and buffer allocated\n";
+		cout << "Printer constructed\n";
 	}
 	~Printer()
 	{
 		delete[] buffer;
-		cout << "Printer destroyed and buffer deallocated\n";
+		cout << "\nPrinter destroyed and buffer deallocated\n";
 	}
 };
 
@@ -47,3 +47,15 @@ int main()
 	delete dev;
 	return 0;
 }
+
+
+/*
+	| Situation                                                | Compiler knows real type?   | Virtual needed? | Result                                   |
+| ------------------------------------------------------------ | --------------------------- | --------------- | ---------------------------------------- |
+| Object created normally (stack variable)                     | ✅ Yes (`FragTrap s1;`)      | ❌ No           | Both destructors run automatically       |
+| Deleted through base pointer (`Device* dev = new Printer()`) | ❌ No (static type = Device) | ✅ Yes          | Only base destructor runs unless virtual |
+
+
+
+
+*/

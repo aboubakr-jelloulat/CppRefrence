@@ -14,7 +14,7 @@ using namespace std;
 
 					 A
 					/ \
-					B   C
+					B  C
 					\ /
 					D
 
