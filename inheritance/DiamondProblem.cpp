@@ -44,18 +44,29 @@ public :
 	int value;
     A() : value(0) {}
 
+	
 };
 
 class B : virtual public A
 {
 public :
-
-
+	
+	
+	
+	B()
+	{
+		cout << "Hej" << endl;
+		value = 19;
+	}
 };
 
 class C : virtual  public A
 {
 public :
+	C()
+	{
+		cout << "Hello" << endl;
+	}
 
 
 };
@@ -96,6 +107,8 @@ int main(void)
 	// {
 
 	// 	D obj;
+
+	// 	// obj.value = 1337;
 
 	// 	obj.setValue(1337);
 		

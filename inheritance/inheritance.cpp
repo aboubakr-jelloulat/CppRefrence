@@ -52,17 +52,18 @@ public:
 
 int main()
 {
-	clsA a;
+	clsA a;  //  : public clsFoo
 
-	a.pub();
+	//a.pub();
 
-	// a.prot(); // ERROR 
+	// // a.prot(); // ERROR 
 
-	a.Hej();
+	// a.Hej();
 
-	clsB b;
+	// clsB b; // protected clsFoo
 
-	// b.pub(); // ERROR: pub is protected in class B
+	// //b.pub();  // ERROR: pub is protected in class B
+	// //b.prot();
 
 
 
