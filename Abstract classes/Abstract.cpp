@@ -113,3 +113,20 @@ int main()
 
 	return 0;
 }
+
+/*
+    An abstract class in C#/... is a class that cannot be instantiated directly.
+    It is designed to be a base class from which other classes can inherit.
+
+    Abstract class: is a restricted class that cannot be used to create objects
+    (to access it, it must be inherited from another class)
+*/
+
+/*
+    Abstract method: can only be used in an abstract class, and it does not have a body.
+    The body is provided by the derived class (inherited from)
+*/
+
+// ********   The abstract keyword is used for classes and methods :
+// 1 * You can’t create an object from an abstract class.
+// 2 * Can contain abstract methods (methods without a body)
